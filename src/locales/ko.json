@@ -1,0 +1,192 @@
+{
+  "header": {
+    "title": "YAHAIT",
+    "home": "홈",
+    "programs": "프로그램",
+    "mentors": "멘토",
+    "successStories": "성공 사례",
+    "curriculum": "커리큘럼 및 가격",
+    "contact": "문의하기",
+    "bookConsultation": "상담 예약"
+  },
+  "hero": {
+    "title": "우수 학생을 위한 프리미엄 YAHAIT",
+    "subtitle": "YAHAIT, KSEF 연구 멘토링, 대학 수준의 CS 준비를 위한 맞춤형 지도.",
+    "startNow": "지금 시작하기",
+    "chatKakaoTalk": "카카오톡으로 채팅하기",
+    "topTierMentors": "최고 수준의 CS 멘토",
+    "ksefGuidance": "KSEF 연구 지도",
+    "universityAdmissions": "명문 대학 합격"
+  },
+  "programs": {
+    "title": "우리 프로그램",
+    "subtitle": "컴퓨터 과학 및 연구 분야에서 탁월함을 추구하는 우수 학생들을 위해 설계된 포괄적인 학습 과정.",
+    "viewCurriculum": "전체 커리큘럼 보기 →",
+    "apcs": {
+      "title": "AP Computer Science A / Principles",
+      "subtitle": "1:1 개인 지도",
+      "features": [
+        "시험 준비 + 프로젝트 기반 학습",
+        "변수, 함수, OOP, 배열, 재귀",
+        "FRQ 연습 및 모의고사",
+        "개인 맞춤 학습 속도"
+      ]
+    },
+    "ksef": {
+      "title": "KSEF / 연구 멘토링",
+      "subtitle": "연구 주제 선택",
+      "features": [
+        "실험 설계",
+        "데이터 분석",
+        "논문 작성 + 발표 코칭",
+        "대회 준비"
+      ]
+    },
+    "portfolio": {
+      "title": "장기 CS 포트폴리오 트랙",
+      "subtitle": "알고리즘 훈련",
+      "features": [
+        "AI/ML 기초",
+        "프로젝트 개발 지도",
+        "코딩 기초 → 알고리즘 → 미니 프로젝트",
+        "최종 캡스톤 프로젝트"
+      ]
+    },
+    "writing": {
+      "title": "학술 논문 작성 및 발표 코칭",
+      "subtitle": "대회, 과학 전시회, 대학 입시용",
+      "features": [
+        "연구 논문 구조",
+        "학술 논문 작성 기술",
+        "발표 기법",
+        "포트폴리오 개발"
+      ]
+    }
+  },
+  "mentors": {
+    "title": "우리 멘토를 만나보세요",
+    "subtitle": "학생 성공에 입증된 실적을 가진 경험 많은 교육자 및 연구자로부터 배우세요.",
+    "viewProfiles": "상세 멘토 프로필 보기 →",
+    "kim": {
+      "name": "김민준 박사",
+      "university": "KAIST 컴퓨터과학 학사",
+      "title": "머신러닝 / CS 교육 연구원",
+      "expertise": ["YAHAIT", "알고리즘", "Python", "AI"],
+      "bio": "YAHAIT 및 연구 프로젝트에서 30명 이상의 학생을 지도했으며, 국내외 대회에서 여러 상을 수상했습니다."
+    },
+    "sarah": {
+      "name": "박사라",
+      "university": "스탠포드 대학교 컴퓨터과학 석사",
+      "title": "소프트웨어 엔지니어 및 연구 멘토",
+      "expertise": ["연구 방법론", "Java", "YAHAIT", "KSEF"],
+      "bio": "전 KSEF 메달리스트로 연구 멘토링에 광범위한 경험을 보유하고 있습니다. 학생들이 최고 점수와 대학 합격을 달성하도록 도왔습니다."
+    },
+    "lee": {
+      "name": "이재성",
+      "university": "포스텍 컴퓨터과학 학사",
+      "title": "AI/ML 전문가 및 대회 코치",
+      "expertise": ["AI", "Python", "데이터 분석", "연구"],
+      "bio": "AI/ML 멘토링 및 대회 준비를 전문으로 합니다. 학생들이 과학 전시회와 올림피아드에서 수많은 상을 수상했습니다."
+    }
+  },
+  "successStories": {
+    "title": "학생 성과",
+    "subtitle": "우리 학생들은 학업, 연구, 대학 입시에서 놀라운 성공을 거두었습니다.",
+    "studentsAdmittedTo": "합격한 대학:",
+    "achievements": {
+      "ksef": "KSEF 본선 진출 및 수상자",
+      "apcs": "YAHAIT 최고 점수 (5점)",
+      "principles": "YAHAIT Principles 우수",
+      "scienceFair": "전국 과학 전시회 수상자"
+    },
+    "testimonials": {
+      "title": "학생들의 후기",
+      "kaist": {
+        "text": "멘토링 덕분에 첫 연구 논문을 완성하고 KSEF 상을 받았습니다. 지도가 매우 소중했습니다.",
+        "author": "학생, KAIST 합격"
+      },
+      "berkeley": {
+        "text": "YAHAIT 튜터링 덕분에 만점 5점을 받았고, 대학에서 컴퓨터 과학을 추구하도록 영감을 받았습니다.",
+        "author": "학생, UC Berkeley 합격"
+      },
+      "georgia": {
+        "text": "멘토가 대학 입시에서 돋보이는 강력한 포트폴리오를 개발하도록 도왔습니다. 꿈의 학교에 합격했습니다!",
+        "author": "학생, Georgia Tech 합격"
+      }
+    }
+  },
+  "curriculum": {
+    "title": "커리큘럼 및 가격",
+    "subtitle": "교육 목표에 맞는 구조화된 학습 경로와 투명한 가격.",
+    "curriculums": {
+      "apcs": {
+        "title": "YAHAIT 커리큘럼",
+        "topics": [
+          "변수, 함수, OOP",
+          "배열, 재귀",
+          "FRQ 연습",
+          "모의고사",
+          "프로젝트 기반 학습"
+        ]
+      },
+      "research": {
+        "title": "연구 멘토링 커리큘럼",
+        "topics": [
+          "주제 선택",
+          "방법론 설계",
+          "실험 실행",
+          "데이터 분석",
+          "논문 작성",
+          "포스터 발표"
+        ]
+      },
+      "portfolio": {
+        "title": "포트폴리오 트랙 커리큘럼",
+        "topics": [
+          "코딩 기초",
+          "알고리즘 훈련",
+          "미니 프로젝트",
+          "최종 캡스톤 프로젝트",
+          "GitHub 포트폴리오 개발"
+        ]
+      }
+    },
+    "pricing": {
+      "program": "프로그램",
+      "format": "형식",
+      "duration": "시간",
+      "price": "가격",
+      "apcs": "YAHAIT 1:1",
+      "ksef": "KSEF 연구 멘토링",
+      "portfolio": "포트폴리오 트랙",
+      "writing": "학술 논문 작성 코칭",
+      "weekly": "주 1회",
+      "biweekly": "격주",
+      "note": "참고: 상담 시 전체 가격 안내를 제공합니다."
+    }
+  },
+  "contact": {
+    "title": "첫 세션 시작하기",
+    "subtitle": "상담을 예약하거나 질문을 남겨주세요. 24시간 이내에 답변드립니다.",
+    "googleForm": "구글 폼",
+    "applyNow": "지금 신청하기",
+    "kakaoTalk": "카카오톡",
+    "chatWithUs": "채팅하기",
+    "email": "이메일",
+    "scanKakaoTalk": "카카오톡 스캔",
+    "qrPlaceholder": "QR 코드 자리표시자",
+    "qrDescription": "이 코드를 스캔하여 카카오톡에서 대화를 시작하세요",
+    "phone": "전화",
+    "hours": "운영 시간",
+    "hoursValue": "월요일 - 금요일, 오전 9시 - 오후 9시 (KST)"
+  },
+  "footer": {
+    "description": "컴퓨터 과학 및 연구 분야에서 탁월함을 추구하는 우수 학생들을 위한 프리미엄 튜터링 및 멘토링.",
+    "quickLinks": "빠른 링크",
+    "contactUs": "문의하기",
+    "kakaoTalkOpenChat": "카카오톡 오픈채팅",
+    "rightsReserved": "모든 권리 보유.",
+    "businessRegistration": "사업자 등록번호: XXX-XX-XXXXX | 서울, 대한민국"
+  }
+}
+

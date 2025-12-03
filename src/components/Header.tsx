@@ -1,21 +1,23 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 export function Header() {
+  const { t } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const menuItems = [
-    'Home',
-    'Programs',
-    'Mentors',
-    'Success Stories',
-    'Curriculum & Pricing',
-    'Contact',
+    { key: 'home', label: t('header.home'), id: 'home' },
+    { key: 'programs', label: t('header.programs'), id: 'programs' },
+    { key: 'mentors', label: t('header.mentors'), id: 'mentors' },
+    { key: 'successStories', label: t('header.successStories'), id: 'success-stories' },
+    { key: 'curriculum', label: t('header.curriculum'), id: 'curriculum-pricing' },
+    { key: 'contact', label: t('header.contact'), id: 'contact' },
   ];
 
-  const scrollToSection = (item: string) => {
-    const sectionId = item.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
-    const element = document.getElementById(sectionId);
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -27,23 +29,24 @@ export function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-blue-600">YAHAIT</h1>
+            <h1 className="text-blue-600">{t('header.title')}</h1>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
               <button
-                key={item}
-                onClick={() => scrollToSection(item)}
+                key={item.key}
+                onClick={() => scrollToSection(item.id)}
                 className="text-gray-700 hover:text-blue-600 transition-colors cursor-pointer"
               >
-                {item}
+                {item.label}
               </button>
             ))}
             <button className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-              Book a Consultation
+              {t('header.bookConsultation')}
             </button>
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -63,16 +66,17 @@ export function Header() {
             <div className="flex flex-col space-y-4">
               {menuItems.map((item) => (
                 <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
+                  key={item.key}
+                  onClick={() => scrollToSection(item.id)}
                   className="text-gray-700 hover:text-blue-600 transition-colors text-left"
                 >
-                  {item}
+                  {item.label}
                 </button>
               ))}
               <button className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                Book a Consultation
+                {t('header.bookConsultation')}
               </button>
+              <LanguageSwitcher />
             </div>
           </div>
         )}

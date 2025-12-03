@@ -1,51 +1,33 @@
 import { Code, FlaskConical, Laptop, PenTool } from 'lucide-react';
 import { ProgramCard } from './ProgramCard';
+import { useTranslation } from 'react-i18next';
 
 export function Programs() {
+  const { t } = useTranslation();
   const programs = [
     {
       icon: <Code className="text-blue-600" size={24} />,
-      title: 'AP Computer Science A / Principles',
-      subtitle: '1:1 tutoring',
-      features: [
-        'Exam preparation + project-based learning',
-        'Variables, functions, OOP, arrays, recursion',
-        'FRQ practice & mock exams',
-        'Personalized learning pace',
-      ],
+      title: t('programs.apcs.title'),
+      subtitle: t('programs.apcs.subtitle'),
+      features: t('programs.apcs.features', { returnObjects: true }) as string[],
     },
     {
       icon: <FlaskConical className="text-blue-600" size={24} />,
-      title: 'KSEF / Research Mentoring',
-      subtitle: 'Research topic selection',
-      features: [
-        'Experiment design',
-        'Data analysis',
-        'Paper writing + presentation coaching',
-        'Competition preparation',
-      ],
+      title: t('programs.ksef.title'),
+      subtitle: t('programs.ksef.subtitle'),
+      features: t('programs.ksef.features', { returnObjects: true }) as string[],
     },
     {
       icon: <Laptop className="text-blue-600" size={24} />,
-      title: 'Long-Term CS Portfolio Track',
-      subtitle: 'Algorithm training',
-      features: [
-        'AI/ML fundamentals',
-        'Project development guidance',
-        'Coding foundations → algorithms → mini projects',
-        'Final capstone project',
-      ],
+      title: t('programs.portfolio.title'),
+      subtitle: t('programs.portfolio.subtitle'),
+      features: t('programs.portfolio.features', { returnObjects: true }) as string[],
     },
     {
       icon: <PenTool className="text-blue-600" size={24} />,
-      title: 'Academic Writing & Presentation Coaching',
-      subtitle: 'For competitions, science fairs, and college apps',
-      features: [
-        'Research paper structure',
-        'Academic writing skills',
-        'Presentation techniques',
-        'Portfolio development',
-      ],
+      title: t('programs.writing.title'),
+      subtitle: t('programs.writing.subtitle'),
+      features: t('programs.writing.features', { returnObjects: true }) as string[],
     },
   ];
 
@@ -53,9 +35,9 @@ export function Programs() {
     <section id="programs" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-gray-900 mb-4">Our Programs</h2>
+          <h2 className="text-gray-900 mb-4">{t('programs.title')}</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Comprehensive learning tracks designed for high-achieving students pursuing excellence in computer science and research.
+            {t('programs.subtitle')}
           </p>
         </div>
 
@@ -67,7 +49,7 @@ export function Programs() {
 
         <div className="text-center">
           <button className="text-blue-600 hover:text-blue-700 inline-flex items-center">
-            View full curriculum →
+            {t('programs.viewCurriculum')}
           </button>
         </div>
       </div>

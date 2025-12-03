@@ -1,0 +1,192 @@
+{
+  "header": {
+    "title": "YAHAIT",
+    "home": "Home",
+    "programs": "Programs",
+    "mentors": "Mentors",
+    "successStories": "Success Stories",
+    "curriculum": "Curriculum & Pricing",
+    "contact": "Contact",
+    "bookConsultation": "Book a Consultation"
+  },
+  "hero": {
+    "title": "Premium YAHAIT for High-Achieving Students",
+    "subtitle": "Personalized instruction for YAHAIT, KSEF research mentoring, and university-level CS readiness.",
+    "startNow": "Start Now",
+    "chatKakaoTalk": "Chat on KakaoTalk",
+    "topTierMentors": "Top-tier CS Mentors",
+    "ksefGuidance": "KSEF Research Guidance",
+    "universityAdmissions": "Student Admissions to Top Universities"
+  },
+  "programs": {
+    "title": "Our Programs",
+    "subtitle": "Comprehensive learning tracks designed for high-achieving students pursuing excellence in computer science and research.",
+    "viewCurriculum": "View full curriculum →",
+    "apcs": {
+      "title": "AP Computer Science A / Principles",
+      "subtitle": "1:1 tutoring",
+      "features": [
+        "Exam preparation + project-based learning",
+        "Variables, functions, OOP, arrays, recursion",
+        "FRQ practice & mock exams",
+        "Personalized learning pace"
+      ]
+    },
+    "ksef": {
+      "title": "KSEF / Research Mentoring",
+      "subtitle": "Research topic selection",
+      "features": [
+        "Experiment design",
+        "Data analysis",
+        "Paper writing + presentation coaching",
+        "Competition preparation"
+      ]
+    },
+    "portfolio": {
+      "title": "Long-Term CS Portfolio Track",
+      "subtitle": "Algorithm training",
+      "features": [
+        "AI/ML fundamentals",
+        "Project development guidance",
+        "Coding foundations → algorithms → mini projects",
+        "Final capstone project"
+      ]
+    },
+    "writing": {
+      "title": "Academic Writing & Presentation Coaching",
+      "subtitle": "For competitions, science fairs, and college apps",
+      "features": [
+        "Research paper structure",
+        "Academic writing skills",
+        "Presentation techniques",
+        "Portfolio development"
+      ]
+    }
+  },
+  "mentors": {
+    "title": "Meet Our Mentors",
+    "subtitle": "Learn from experienced educators and researchers with proven track records in student success.",
+    "viewProfiles": "View detailed mentor profiles →",
+    "kim": {
+      "name": "Dr. Kim Min-jun",
+      "university": "B.S. Computer Science, KAIST",
+      "title": "Researcher in Machine Learning / CS Education",
+      "expertise": ["YAHAIT", "Algorithms", "Python", "AI"],
+      "bio": "Guided 30+ students in YAHAIT and research projects, with multiple awards in national and international competitions."
+    },
+    "sarah": {
+      "name": "Sarah Park",
+      "university": "M.S. Computer Science, Stanford University",
+      "title": "Software Engineer & Research Mentor",
+      "expertise": ["Research Methods", "Java", "YAHAIT", "KSEF"],
+      "bio": "Former KSEF medalist with extensive experience in research mentoring. Helped students achieve top scores and university acceptances."
+    },
+    "lee": {
+      "name": "Lee Jae-sung",
+      "university": "B.S. Computer Science, POSTECH",
+      "title": "AI/ML Specialist & Competition Coach",
+      "expertise": ["AI", "Python", "Data Analysis", "Research"],
+      "bio": "Specializes in AI/ML mentoring and competition preparation. Students have won numerous awards in science fairs and olympiads."
+    }
+  },
+  "successStories": {
+    "title": "Student Achievements",
+    "subtitle": "Our students have achieved remarkable success in academics, research, and university admissions.",
+    "studentsAdmittedTo": "Students admitted to:",
+    "achievements": {
+      "ksef": "KSEF Finalists & Medalists",
+      "apcs": "Top scores in YAHAIT (5)",
+      "principles": "YAHAIT Principles Excellence",
+      "scienceFair": "National Science Fair Winners"
+    },
+    "testimonials": {
+      "title": "What Our Students Say",
+      "kaist": {
+        "text": "Thanks to the mentoring, I completed my first research paper and won a KSEF award. The guidance was invaluable.",
+        "author": "Student, KAIST Admit"
+      },
+      "berkeley": {
+        "text": "The YAHAIT tutoring helped me achieve a perfect 5 score and inspired me to pursue computer science in college.",
+        "author": "Student, UC Berkeley Admit"
+      },
+      "georgia": {
+        "text": "My mentor helped me develop a strong portfolio that stood out in my university applications. I got into my dream school!",
+        "author": "Student, Georgia Tech Admit"
+      }
+    }
+  },
+  "curriculum": {
+    "title": "Curriculum & Pricing",
+    "subtitle": "Structured learning paths with transparent pricing to fit your educational goals.",
+    "curriculums": {
+      "apcs": {
+        "title": "YAHAIT Curriculum",
+        "topics": [
+          "Variables, functions, OOP",
+          "Arrays, recursion",
+          "FRQ practice",
+          "Mock exams",
+          "Project-based learning"
+        ]
+      },
+      "research": {
+        "title": "Research Mentoring Curriculum",
+        "topics": [
+          "Topic selection",
+          "Methodology design",
+          "Experiment execution",
+          "Data analysis",
+          "Paper writing",
+          "Poster presentation"
+        ]
+      },
+      "portfolio": {
+        "title": "Portfolio Track Curriculum",
+        "topics": [
+          "Coding foundations",
+          "Algorithm training",
+          "Mini projects",
+          "Final capstone project",
+          "GitHub portfolio development"
+        ]
+      }
+    },
+    "pricing": {
+      "program": "Program",
+      "format": "Format",
+      "duration": "Duration",
+      "price": "Price",
+      "apcs": "YAHAIT 1:1",
+      "ksef": "KSEF Research Mentoring",
+      "portfolio": "Portfolio Track",
+      "writing": "Academic Writing Coaching",
+      "weekly": "Weekly",
+      "biweekly": "Bi-weekly",
+      "note": "Note: Full price guide provided during consultation."
+    }
+  },
+  "contact": {
+    "title": "Start Your First Session",
+    "subtitle": "Book a consultation or ask any questions. We respond within 24 hours.",
+    "googleForm": "Google Form",
+    "applyNow": "Apply Now",
+    "kakaoTalk": "KakaoTalk",
+    "chatWithUs": "Chat with Us",
+    "email": "Email",
+    "scanKakaoTalk": "Scan for KakaoTalk",
+    "qrPlaceholder": "QR Code Placeholder",
+    "qrDescription": "Scan this code to start a conversation on KakaoTalk",
+    "phone": "Phone",
+    "hours": "Hours",
+    "hoursValue": "Monday - Friday, 9:00 AM - 9:00 PM KST"
+  },
+  "footer": {
+    "description": "Premium tutoring and mentoring for high-achieving students pursuing excellence in computer science and research.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "kakaoTalkOpenChat": "KakaoTalk Open Chat",
+    "rightsReserved": "All rights reserved.",
+    "businessRegistration": "Business Registration: XXX-XX-XXXXX | Seoul, South Korea"
+  }
+}
+

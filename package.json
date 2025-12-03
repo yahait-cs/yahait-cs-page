@@ -45,7 +45,10 @@
           "recharts": "^2.15.2",
           "sonner": "^2.0.3",
           "tailwind-merge": "*",
-          "vaul": "^1.1.2"
+          "vaul": "^1.1.2",
+          "i18next": "^23.7.16",
+          "react-i18next": "^14.0.5",
+          "i18next-browser-languagedetector": "^7.2.0"
       },
       "devDependencies": {
           "@types/node": "^20.10.0",

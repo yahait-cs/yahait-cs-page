@@ -1,62 +1,45 @@
 import { CheckCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export function Curriculum() {
+  const { t } = useTranslation();
   const curriculumData = [
     {
-      title: 'AP CS A Curriculum',
-      topics: [
-        'Variables, functions, OOP',
-        'Arrays, recursion',
-        'FRQ practice',
-        'Mock exams',
-        'Project-based learning',
-      ],
+      title: t('curriculum.curriculums.apcs.title'),
+      topics: t('curriculum.curriculums.apcs.topics', { returnObjects: true }) as string[],
     },
     {
-      title: 'Research Mentoring Curriculum',
-      topics: [
-        'Topic selection',
-        'Methodology design',
-        'Experiment execution',
-        'Data analysis',
-        'Paper writing',
-        'Poster presentation',
-      ],
+      title: t('curriculum.curriculums.research.title'),
+      topics: t('curriculum.curriculums.research.topics', { returnObjects: true }) as string[],
     },
     {
-      title: 'Portfolio Track Curriculum',
-      topics: [
-        'Coding foundations',
-        'Algorithm training',
-        'Mini projects',
-        'Final capstone project',
-        'GitHub portfolio development',
-      ],
+      title: t('curriculum.curriculums.portfolio.title'),
+      topics: t('curriculum.curriculums.portfolio.topics', { returnObjects: true }) as string[],
     },
   ];
 
   const pricingData = [
     {
-      program: 'AP CS A 1:1',
-      format: 'Weekly',
+      program: t('curriculum.pricing.apcs'),
+      format: t('curriculum.pricing.weekly'),
       duration: '80 minutes',
       price: '$$',
     },
     {
-      program: 'KSEF Research Mentoring',
-      format: 'Weekly',
+      program: t('curriculum.pricing.ksef'),
+      format: t('curriculum.pricing.weekly'),
       duration: '90 minutes',
       price: '$$',
     },
     {
-      program: 'Portfolio Track',
-      format: 'Bi-weekly',
+      program: t('curriculum.pricing.portfolio'),
+      format: t('curriculum.pricing.biweekly'),
       duration: '90 minutes',
       price: '$$',
     },
     {
-      program: 'Academic Writing Coaching',
-      format: 'Weekly',
+      program: t('curriculum.pricing.writing'),
+      format: t('curriculum.pricing.weekly'),
       duration: '60 minutes',
       price: '$',
     },
@@ -66,9 +49,9 @@ export function Curriculum() {
     <section id="curriculum-pricing" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-gray-900 mb-4">Curriculum & Pricing</h2>
+          <h2 className="text-gray-900 mb-4">{t('curriculum.title')}</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Structured learning paths with transparent pricing to fit your educational goals.
+            {t('curriculum.subtitle')}
           </p>
         </div>
 
@@ -95,10 +78,10 @@ export function Curriculum() {
             <table className="w-full">
               <thead className="bg-blue-600 text-white">
                 <tr>
-                  <th className="px-6 py-4 text-left">Program</th>
-                  <th className="px-6 py-4 text-left">Format</th>
-                  <th className="px-6 py-4 text-left">Duration</th>
-                  <th className="px-6 py-4 text-left">Price</th>
+                  <th className="px-6 py-4 text-left">{t('curriculum.pricing.program')}</th>
+                  <th className="px-6 py-4 text-left">{t('curriculum.pricing.format')}</th>
+                  <th className="px-6 py-4 text-left">{t('curriculum.pricing.duration')}</th>
+                  <th className="px-6 py-4 text-left">{t('curriculum.pricing.price')}</th>
                 </tr>
               </thead>
               <tbody>
@@ -118,7 +101,7 @@ export function Curriculum() {
           </div>
           <div className="px-6 py-4 bg-blue-50 border-t border-blue-100">
             <p className="text-gray-700 text-center">
-              <strong>Note:</strong> Full price guide provided during consultation.
+              <strong>{t('curriculum.pricing.note')}</strong>
             </p>
           </div>
         </div>
