@@ -1,9 +1,14 @@
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
-import { Programs } from './components/Programs';
-import { Mentors } from './components/Mentors';
-import { SuccessStories } from './components/SuccessStories';
-import { Curriculum } from './components/Curriculum';
+import { Problem } from './components/Problem';
+import { Philosophy } from './components/Philosophy';
+import { ResearchCurriculum } from './components/ResearchCurriculum';
+import { CSRole } from './components/CSRole';
+import { ResultsSummary } from './components/ResultsSummary';
+import { Deliverables } from './components/Deliverables';
+import { Process } from './components/Process';
+import { FAQ } from './components/FAQ';
+import { FinalCTA } from './components/FinalCTA';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
@@ -13,10 +18,15 @@ export default function App() {
       <Header />
       <main>
         <Hero />
-        <Programs />
-        <Mentors />
-        <SuccessStories />
-        <Curriculum />
+        <Problem />
+        <Philosophy />
+        <ResearchCurriculum />
+        <CSRole />
+        <ResultsSummary />
+        <Deliverables />
+        <Process />
+        <FAQ />
+        <FinalCTA />
         <Contact />
       </main>
       <Footer />

@@ -1,42 +1,61 @@
 import { Mail, MessageCircle } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
 
 export function Footer() {
-  const { t } = useTranslation();
   return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <footer className="bg-[#1a1a1a] text-white py-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Logo and Description */}
           <div>
-            <h3 className="mb-4">{t('header.title')}</h3>
-            <p className="text-gray-400">
-              {t('footer.description')}
+            <div className="mb-6">
+              <div className="flex items-center gap-3">
+                <img
+                  src="/src/logo.png"
+                  alt="YAHAIT.CS Logo"
+                  className="h-10 w-auto brightness-0 invert"
+                />
+              </div>
+            </div>
+            <p className="text-gray-400 leading-relaxed">
+              성적이 잘 나오는 수업이 아닌,<br />
+              공부하는 방법을 가르치는 수업
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-4">{t('footer.quickLinks')}</h4>
-            <ul className="space-y-2">
+            <h4 className="text-white mb-6 tracking-wide">바로가기</h4>
+            <ul className="space-y-3">
               <li>
-                <button className="text-gray-400 hover:text-white transition-colors">
-                  {t('header.programs')}
+                <button
+                  onClick={() => document.getElementById('philosophy')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-gray-400 hover:text-[#b8860b] transition-colors"
+                >
+                  철학
                 </button>
               </li>
               <li>
-                <button className="text-gray-400 hover:text-white transition-colors">
-                  {t('header.mentors')}
+                <button
+                  onClick={() => document.getElementById('research')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-gray-400 hover:text-[#b8860b] transition-colors"
+                >
+                  연구 트랙
                 </button>
               </li>
               <li>
-                <button className="text-gray-400 hover:text-white transition-colors">
-                  {t('header.successStories')}
+                <button
+                  onClick={() => document.getElementById('results')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-gray-400 hover:text-[#b8860b] transition-colors"
+                >
+                  수상실적
                 </button>
               </li>
               <li>
-                <button className="text-gray-400 hover:text-white transition-colors">
-                  {t('header.curriculum')}
+                <button
+                  onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="text-gray-400 hover:text-[#b8860b] transition-colors"
+                >
+                  FAQ
                 </button>
               </li>
             </ul>
@@ -44,26 +63,26 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="mb-4">{t('footer.contactUs')}</h4>
+            <h4 className="text-white mb-6 tracking-wide">문의하기</h4>
             <ul className="space-y-3">
-              <li className="flex items-center">
-                <Mail className="mr-2" size={20} />
+              <li className="flex items-start gap-3">
+                <Mail className="text-[#b8860b] mt-1 shrink-0" size={18} />
                 <a
                   href="mailto:yahait.cs@gmail.com"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 hover:text-[#b8860b] transition-colors"
                 >
                   yahait.cs@gmail.com
                 </a>
               </li>
-              <li className="flex items-center">
-                <MessageCircle className="mr-2" size={20} />
+              <li className="flex items-start gap-3">
+                <MessageCircle className="text-[#b8860b] mt-1 shrink-0" size={18} />
                 <a
-                  href="https://open.kakao.com"
+                  href="https://open.kakao.com/o/s5Skzg9h"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 hover:text-[#b8860b] transition-colors"
                 >
-                  {t('footer.kakaoTalkOpenChat')}
+                  카카오톡 오픈채팅
                 </a>
               </li>
             </ul>
@@ -71,13 +90,15 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 text-center">
-          <p className="text-gray-400">
-            © {new Date().getFullYear()} {t('header.title')}. {t('footer.rightsReserved')}
-          </p>
-          <p className="text-gray-500 mt-2">
-            {t('footer.businessRegistration')}
-          </p>
+        <div className="border-t border-white/10 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-500 text-sm">
+              © {new Date().getFullYear()} YAHAIT.CS. All rights reserved.
+            </p>
+            <p className="text-gray-500 text-sm">
+              국제학교 학생 대상 연구 중심 교육 프로그램
+            </p>
+          </div>
         </div>
       </div>
     </footer>
